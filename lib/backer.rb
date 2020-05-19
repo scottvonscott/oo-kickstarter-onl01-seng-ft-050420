@@ -6,8 +6,12 @@ class Backers
 
   def initialize (name)
     @name = name
+    save
   end
 
+ def save
+   @@backed_projects << self
+ end
 
 
 
